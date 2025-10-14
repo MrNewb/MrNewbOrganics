@@ -80,7 +80,7 @@ function LocationObj:createZoneTarget()
             end
         },
     }
-    self.targetzone = Bridge.Target.AddSphereZone(self.id, vector3(self.coords.x, self.coords.y, self.coords.z), self.coords.w, options, true)
+    self.targetzone = Bridge.Target.AddSphereZone(self.id, vector3(self.coords.x, self.coords.y, self.coords.z), self.coords.w, options, false)
 end
 
 function LocationObj:attemptPick()
