@@ -24,9 +24,8 @@ Config.PickingTypes = {
     },
     ["Pineapple"] = {
         locations = {
-            vector4(2190.8911, 5096.1934, 47.0741, 41.8049),
-            vector4(2188.4407, 5098.7378, 47.9127, 42.9676),
-            vector4(2185.2417, 5102.0708, 47.6935, 43.8043),
+            vector4(2188.4407, 5098.7378, 47.0, 42.9676),
+            vector4(2185.2417, 5102.0708, 46.8, 43.8043),
         },
         rewardItem = {item = "pineapple", count = 1, metadata = {}},
         anim = {dict = "amb@world_human_gardener_plant@male@base", name = "base", flag = 1},

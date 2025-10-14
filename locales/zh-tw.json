@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "農夫市場",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "採摘",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "採摘"
+	},
+	"Blips": {
+		"pickblip": "採摘植物"
+	},
+	"FarmersMarket": {
+		"Title": "農夫市場",
+		"Description": "在這裡出售您的農產品。",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "售賣數量",
+		"color": "green",
+		"sellmenu": "售賣農產品",
+		"sellitem": "以每個$%s的價格售賣%s",
+		"noproducts": "您沒有%s可以售賣。",
+		"notsolditem": "此物品無法在這裡售賣。",
+		"error": "嘗試售賣您的物品時發生錯誤。",
+		"toofar": "您離市場太遠了。",
+		"sold": "您以$%s的價格售賣了%sx %s。"
+	}
+}
