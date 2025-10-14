@@ -37,6 +37,7 @@ AddEventHandler('onResourceStart', function(resourceName)
     for k, v in pairs(Config.FarmersMarket.Markets) do
         ShopObj:new(k, v.coords, v.shopItems)
     end
+    Bridge.Version.AdvancedVersionChecker("MrNewb/patchnotes", resourceName)
 end)
 
 RegisterNetEvent("MrNewbFarmersMarket:Server:SellToMarket", function(id, itemName, count)
