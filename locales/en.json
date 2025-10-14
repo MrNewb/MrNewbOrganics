@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Farmers Market",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Pick",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Picking"
+	},
+	"Blips": {
+		"pickblip": "Pick Plant"
+	},
+	"FarmersMarket": {
+		"Title": "Farmers Market",
+		"Description": "Sell your produce here.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Amount to Sell",
+		"color": "green",
+		"sellmenu": "Sell Produce",
+		"sellitem": "Sell %s for $%s each",
+		"noproducts": "You have no %s to sell.",
+		"notsolditem": "This item cannot be sold here.",
+		"error": "An error occurred while trying to sell your items.",
+		"toofar": "You moved too far away from the market.",
+		"sold": "You sold %sx %s for $%s."
+	}
+}

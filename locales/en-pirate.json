@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Pirate's Market",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Plunder",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Plunderin'"
+	},
+	"Blips": {
+		"pickblip": "Harvest ye bounty"
+	},
+	"FarmersMarket": {
+		"Title": "Pirate's Market",
+		"Description": "Trade yer bounty here, ye landlubber!",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Treasure to trade",
+		"color": "green",
+		"sellmenu": "Trade yer bounty",
+		"sellitem": "Trade %s fer $%s doubloons each",
+		"noproducts": "Ye have no %s to trade, ye scurvy dog!",
+		"notsolditem": "This here treasure can't be traded at this port!",
+		"error": "Arrr! Somethin' went wrong while tradin' yer treasure!",
+		"toofar": "Ye sailed too far from the market, matey!",
+		"sold": "Ye traded %sx %s fer $%s doubloons! Arrr!"
+	}
+}

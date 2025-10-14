@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Piața fermierilor",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Culegere",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Culegere"
+	},
+	"Blips": {
+		"pickblip": "Culege planta"
+	},
+	"FarmersMarket": {
+		"Title": "Piața fermierilor",
+		"Description": "Vinde-ți produsele aici.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Cantitatea de vândut",
+		"color": "green",
+		"sellmenu": "Vinde produse",
+		"sellitem": "Vinde %s pentru $%s fiecare",
+		"noproducts": "Nu ai %s de vândut.",
+		"notsolditem": "Acest articol nu poate fi vândut aici.",
+		"error": "A apărut o eroare în timp ce încercai să-ți vinzi articolele.",
+		"toofar": "Te-ai îndepărtat prea mult de piață.",
+		"sold": "Ai vândut %sx %s pentru $%s."
+	}
+}

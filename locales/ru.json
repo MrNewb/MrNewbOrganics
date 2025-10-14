@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Фермерский рынок",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Собрать",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Сбор"
+	},
+	"Blips": {
+		"pickblip": "Собрать растение"
+	},
+	"FarmersMarket": {
+		"Title": "Фермерский рынок",
+		"Description": "Продавайте свою продукцию здесь.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Количество для продажи",
+		"color": "green",
+		"sellmenu": "Продать продукцию",
+		"sellitem": "Продать %s за $%s каждый",
+		"noproducts": "У вас нет %s для продажи.",
+		"notsolditem": "Этот предмет нельзя продать здесь.",
+		"error": "Произошла ошибка при попытке продать ваши предметы.",
+		"toofar": "Вы отошли слишком далеко от рынка.",
+		"sold": "Вы продали %sx %s за $%s."
+	}
+}

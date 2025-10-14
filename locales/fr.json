@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Marché fermier",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Cueillir",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Cueillette"
+	},
+	"Blips": {
+		"pickblip": "Cueillir la plante"
+	},
+	"FarmersMarket": {
+		"Title": "Marché fermier",
+		"Description": "Vendez vos produits ici.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Quantité à vendre",
+		"color": "green",
+		"sellmenu": "Vendre des produits",
+		"sellitem": "Vendre %s pour $%s chacun",
+		"noproducts": "Vous n'avez pas de %s à vendre.",
+		"notsolditem": "Cet article ne peut pas être vendu ici.",
+		"error": "Une erreur s'est produite lors de la vente de vos articles.",
+		"toofar": "Vous êtes trop loin du marché.",
+		"sold": "Vous avez vendu %sx %s pour $%s."
+	}
+}

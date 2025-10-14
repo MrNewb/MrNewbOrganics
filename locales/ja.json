@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "ファーマーズマーケット",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "摘む",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "収穫"
+	},
+	"Blips": {
+		"pickblip": "植物を摘む"
+	},
+	"FarmersMarket": {
+		"Title": "ファーマーズマーケット",
+		"Description": "こちらで農産物を販売してください。",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "販売数量",
+		"color": "green",
+		"sellmenu": "農産物を販売",
+		"sellitem": "%sを1個$%sで販売",
+		"noproducts": "販売する%sがありません。",
+		"notsolditem": "この商品はここで販売できません。",
+		"error": "商品の販売中にエラーが発生しました。",
+		"toofar": "マーケットから離れすぎました。",
+		"sold": "%sx %sを$%sで販売しました。"
+	}
+}

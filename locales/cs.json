@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Farmářský trh",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Trhat",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Trhání"
+	},
+	"Blips": {
+		"pickblip": "Trhat rostlinu"
+	},
+	"FarmersMarket": {
+		"Title": "Farmářský trh",
+		"Description": "Prodejte zde své produkty.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Množství k prodeji",
+		"color": "green",
+		"sellmenu": "Prodat produkty",
+		"sellitem": "Prodat %s za $%s každý",
+		"noproducts": "Nemáte žádný %s k prodeji.",
+		"notsolditem": "Tuto položku zde nelze prodat.",
+		"error": "Při pokusu o prodej vašich položek došlo k chybě.",
+		"toofar": "Vzdálili jste se příliš daleko od trhu.",
+		"sold": "Prodali jste %sx %s za $%s."
+	}
+}

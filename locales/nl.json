@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Boerenmarkt",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Plukken",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Plukken"
+	},
+	"Blips": {
+		"pickblip": "Plant plukken"
+	},
+	"FarmersMarket": {
+		"Title": "Boerenmarkt",
+		"Description": "Verkoop hier je producten.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Hoeveelheid te verkopen",
+		"color": "green",
+		"sellmenu": "Producten verkopen",
+		"sellitem": "Verkoop %s voor $%s per stuk",
+		"noproducts": "Je hebt geen %s om te verkopen.",
+		"notsolditem": "Dit item kan hier niet worden verkocht.",
+		"error": "Er is een fout opgetreden bij het verkopen van je items.",
+		"toofar": "Je bent te ver van de markt weggelopen.",
+		"sold": "Je hebt %sx %s verkocht voor $%s."
+	}
+}

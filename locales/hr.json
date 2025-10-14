@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Farmarska tržnica",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Branje",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Branje"
+	},
+	"Blips": {
+		"pickblip": "Poberi biljku"
+	},
+	"FarmersMarket": {
+		"Title": "Farmarska tržnica",
+		"Description": "Prodajte svoje proizvode ovdje.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Količina za prodaju",
+		"color": "green",
+		"sellmenu": "Prodaj proizvode",
+		"sellitem": "Prodaj %s za $%s svaki",
+		"noproducts": "Nemate %s za prodaju.",
+		"notsolditem": "Ovaj artikl se ne može prodati ovdje.",
+		"error": "Dogodila se greška prilikom pokušaja prodaje vaših artikala.",
+		"toofar": "Udaljavili ste se previše od tržnice.",
+		"sold": "Prodali ste %sx %s za $%s."
+	}
+}

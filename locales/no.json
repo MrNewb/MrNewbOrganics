@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Bondens marked",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Plukke",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Plukking"
+	},
+	"Blips": {
+		"pickblip": "Plukk plante"
+	},
+	"FarmersMarket": {
+		"Title": "Bondens marked",
+		"Description": "Selg produktene dine her.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Mengde å selge",
+		"color": "green",
+		"sellmenu": "Selg produkter",
+		"sellitem": "Selg %s for $%s hver",
+		"noproducts": "Du har ingen %s å selge.",
+		"notsolditem": "Denne varen kan ikke selges her.",
+		"error": "Det oppstod en feil under forsøket på å selge varene dine.",
+		"toofar": "Du har beveget deg for langt bort fra markedet.",
+		"sold": "Du solgte %sx %s for $%s."
+	}
+}

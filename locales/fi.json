@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Maanviljelijöiden tori",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Poimi",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Poiminta"
+	},
+	"Blips": {
+		"pickblip": "Poimi kasvi"
+	},
+	"FarmersMarket": {
+		"Title": "Maanviljelijöiden tori",
+		"Description": "Myy tuotteesi täällä.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Myytävä määrä",
+		"color": "green",
+		"sellmenu": "Myy tuotteita",
+		"sellitem": "Myy %s hintaan $%s kappale",
+		"noproducts": "Sinulla ei ole %s myytävänä.",
+		"notsolditem": "Tätä tuotetta ei voi myydä täällä.",
+		"error": "Virhe tapahtui yritettäessä myydä tuotteitasi.",
+		"toofar": "Siirryit liian kauas torilta.",
+		"sold": "Myit %sx %s hintaan $%s."
+	}
+}

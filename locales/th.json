@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "ตลาดเกษตรกร",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "เก็บ",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "การเก็บ"
+	},
+	"Blips": {
+		"pickblip": "เก็บพืช"
+	},
+	"FarmersMarket": {
+		"Title": "ตลาดเกษตรกร",
+		"Description": "ขายผลผลิตของคุณที่นี่",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "จำนวนที่จะขาย",
+		"color": "green",
+		"sellmenu": "ขายผลผลิต",
+		"sellitem": "ขาย %s ในราคา $%s ต่อชิ้น",
+		"noproducts": "คุณไม่มี %s สำหรับขาย",
+		"notsolditem": "สินค้านี้ไม่สามารถขายได้ที่นี่",
+		"error": "เกิดข้อผิดพลาดขณะพยายามขายสินค้าของคุณ",
+		"toofar": "คุณเดินออกไปไกลจากตลาดเกินไป",
+		"sold": "คุณขาย %sx %s ในราคา $%s"
+	}
+}

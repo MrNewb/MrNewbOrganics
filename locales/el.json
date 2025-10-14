@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Αγορά Αγροτών",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Μάζεμα",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Μάζεμα"
+	},
+	"Blips": {
+		"pickblip": "Μάζεμα φυτού"
+	},
+	"FarmersMarket": {
+		"Title": "Αγορά Αγροτών",
+		"Description": "Πουλήστε τα προϊόντα σας εδώ.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Ποσότητα προς πώληση",
+		"color": "green",
+		"sellmenu": "Πούληση προϊόντων",
+		"sellitem": "Πώληση %s για $%s το καθένα",
+		"noproducts": "Δεν έχετε %s για πώληση.",
+		"notsolditem": "Αυτό το αντικείμενο δεν μπορεί να πωληθεί εδώ.",
+		"error": "Παρουσιάστηκε σφάλμα κατά την προσπάθεια πώλησης των αντικειμένων σας.",
+		"toofar": "Απομακρυνθήκατε πολύ από την αγορά.",
+		"sold": "Πουλήσατε %sx %s για $%s."
+	}
+}

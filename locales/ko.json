@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "농부 시장",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "따기",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "수확"
+	},
+	"Blips": {
+		"pickblip": "식물 따기"
+	},
+	"FarmersMarket": {
+		"Title": "농부 시장",
+		"Description": "여기서 농산물을 판매하세요.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "판매할 수량",
+		"color": "green",
+		"sellmenu": "농산물 판매",
+		"sellitem": "%s를 개당 $%s에 판매",
+		"noproducts": "판매할 %s가 없습니다.",
+		"notsolditem": "이 품목은 여기서 판매할 수 없습니다.",
+		"error": "품목 판매 중 오류가 발생했습니다.",
+		"toofar": "시장에서 너무 멀리 이동했습니다.",
+		"sold": "%sx %s를 $%s에 판매했습니다."
+	}
+}

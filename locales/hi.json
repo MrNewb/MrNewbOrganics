@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "किसान बाजार",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "तोड़ना",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "तोड़ना"
+	},
+	"Blips": {
+		"pickblip": "पौधा तोड़ें"
+	},
+	"FarmersMarket": {
+		"Title": "किसान बाजार",
+		"Description": "यहाँ अपने उत्पाद बेचें।",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "बेचने की मात्रा",
+		"color": "green",
+		"sellmenu": "उत्पाद बेचें",
+		"sellitem": "%s को $%s प्रत्येक में बेचें",
+		"noproducts": "आपके पास बेचने के लिए कोई %s नहीं है।",
+		"notsolditem": "यह वस्तु यहाँ नहीं बेची जा सकती।",
+		"error": "आपकी वस्तुओं को बेचने की कोशिश में एक त्रुटि हुई।",
+		"toofar": "आप बाजार से बहुत दूर चले गए हैं।",
+		"sold": "आपने %sx %s को $%s में बेचा।"
+	}
+}

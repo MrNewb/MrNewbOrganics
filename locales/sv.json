@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Bondens marknad",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Plocka",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Plockning"
+	},
+	"Blips": {
+		"pickblip": "Plocka växt"
+	},
+	"FarmersMarket": {
+		"Title": "Bondens marknad",
+		"Description": "Sälj dina produkter här.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Mängd att sälja",
+		"color": "green",
+		"sellmenu": "Sälj produkter",
+		"sellitem": "Sälj %s för $%s vardera",
+		"noproducts": "Du har ingen %s att sälja.",
+		"notsolditem": "Denna vara kan inte säljas här.",
+		"error": "Ett fel uppstod när du försökte sälja dina varor.",
+		"toofar": "Du rörde dig för långt från marknaden.",
+		"sold": "Du sålde %sx %s för $%s."
+	}
+}

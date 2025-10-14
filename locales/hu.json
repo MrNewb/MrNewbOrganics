@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Termelői piac",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Szedés",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Szedés"
+	},
+	"Blips": {
+		"pickblip": "Növény szedése"
+	},
+	"FarmersMarket": {
+		"Title": "Termelői piac",
+		"Description": "Itt adja el a termékeit.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Eladandó mennyiség",
+		"color": "green",
+		"sellmenu": "Termékek eladása",
+		"sellitem": "%s eladása $%s-ért darabonként",
+		"noproducts": "Nincs %s eladásra.",
+		"notsolditem": "Ez a tétel itt nem adható el.",
+		"error": "Hiba történt a tételek eladása során.",
+		"toofar": "Túl messzire ment a piactól.",
+		"sold": "%sx %s-t adott el $%s-ért."
+	}
+}

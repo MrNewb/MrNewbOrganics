@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Targ rolniczy",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Zbieranie",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Zbieranie"
+	},
+	"Blips": {
+		"pickblip": "Zbierz roślinę"
+	},
+	"FarmersMarket": {
+		"Title": "Targ rolniczy",
+		"Description": "Sprzedaj tutaj swoje produkty.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Ilość do sprzedania",
+		"color": "green",
+		"sellmenu": "Sprzedaj produkty",
+		"sellitem": "Sprzedaj %s za $%s każdy",
+		"noproducts": "Nie masz %s do sprzedania.",
+		"notsolditem": "Ten przedmiot nie może być tutaj sprzedany.",
+		"error": "Wystąpił błąd podczas próby sprzedaży twoich przedmiotów.",
+		"toofar": "Odszedłeś zbyt daleko od targu.",
+		"sold": "Sprzedałeś %sx %s za $%s."
+	}
+}

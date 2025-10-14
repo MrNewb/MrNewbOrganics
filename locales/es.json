@@ -1,0 +1,28 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Mercado de Agricultores",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Recoger",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Recolección"
+	},
+	"Blips": {
+		"pickblip": "Recoger planta"
+	},
+	"FarmersMarket": {
+		"Title": "Mercado de Agricultores",
+		"Description": "Vende tus productos aquí.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Cantidad a vender",
+		"color": "green",
+		"sellmenu": "Vender productos",
+		"sellitem": "Vender %s por $%s cada uno",
+		"noproducts": "No tienes %s para vender.",
+		"notsolditem": "Este artículo no se puede vender aquí.",
+		"error": "Ocurrió un error al intentar vender tus artículos.",
+		"toofar": "Te alejaste demasiado del mercado.",
+		"sold": "Vendiste %sx %s por $%s."
+	}
+}
