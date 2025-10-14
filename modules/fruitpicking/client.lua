@@ -106,14 +106,14 @@ function LocationObj:destroy()
     if self.blip then Bridge.Utility.RemoveBlip(self.blip) end
 end
 
--- for debugging
-CreateThread(function()
-    for plantType, data in pairs(Config.PickingTypes) do
-        for locationIndex, locationCoords in ipairs(data.locations) do
-            LocationObj:new(plantType, locationIndex, locationCoords, data)
-        end
-    end
-end)
+-- -- for my tests and stuff
+-- CreateThread(function()
+--     for plantType, data in pairs(Config.PickingTypes) do
+--         for locationIndex, locationCoords in ipairs(data.locations) do
+--             LocationObj:new(plantType, locationIndex, locationCoords, data)
+--         end
+--     end
+-- end)
 
 AddEventHandler('onResourceStop', function(resourceName)
     if GetCurrentResourceName() ~= resourceName then return end
