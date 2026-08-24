@@ -14,8 +14,11 @@ ensure Newb_Bridge
 ensure MrNewbOrganics
 ```
 
-Copy `[INSTALL]/images/` into your inventory images folder. Register `apple`, `pineapple`, and `lettuce` as items.
+Copy `[install]/images/` (`apple.png`, `pineapple.png`, `lettuce.png`) into your inventory images folder. Register `apple`, `pineapple`, and `lettuce` as items.
 
 ## Config
 
-`configs/config.lua` — pick sites (sphere zones or spawned props), reward items, animations, vendor peds, blips, and sell prices
+Everything lives in `configs/config.lua`:
+
+- `Config.PickingTypes` — pick sites (sphere zones or spawned props), reward items, and animations. Each type only places a map blip on the **first** location in its list.
+- `Config.FarmersMarket` — vendor peds, blips, and sell prices
