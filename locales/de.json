@@ -1,8 +1,5 @@
 {
 	"Targets": {
-		"FarmersMarketLabel": "Bauernmarkt",
-		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
-		"FarmersMarketColor": "green",
 		"picklabel": "Pflücken",
 		"pickicon": "fa-solid fa-leaf",
 		"pickcolor": "green",
@@ -11,18 +8,20 @@
 	"Blips": {
 		"pickblip": "Pflanze pflücken"
 	},
-	"FarmersMarket": {
+	"Picking": {
+		"cannotCarry": "Sie können nicht mehr von diesem Gegenstand tragen."
+	},
+	"FruitBuyer": {
 		"Title": "Bauernmarkt",
 		"Description": "Verkaufen Sie hier Ihre Produkte.",
-		"MenuIcon": "fa-solid fa-basket-shopping",
 		"AmountToSell": "Zu verkaufende Menge",
-		"color": "green",
 		"sellmenu": "Produkte verkaufen",
 		"sellitem": "%s für $%s pro Stück verkaufen",
 		"noproducts": "Sie haben keine %s zu verkaufen.",
 		"notsolditem": "Dieser Artikel kann hier nicht verkauft werden.",
 		"error": "Beim Verkauf Ihrer Artikel ist ein Fehler aufgetreten.",
 		"toofar": "Sie sind zu weit vom Markt entfernt.",
-		"sold": "Sie haben %sx %s für $%s verkauft."
+		"sold": "Sie haben %sx %s für $%s verkauft.",
+		"empty": "Sie haben derzeit nichts zu verkaufen."
 	}
 }

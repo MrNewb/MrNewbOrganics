@@ -1,36 +1,21 @@
-# 🍎MrNewb's Organics🍍
+# MrNewbOrganics
 
-A comprehensive script featuring fruit tree picking, vegetable harvesting, and vendor interactions for your FiveM server.
+Fruit tree picking, vegetable harvesting, and a farmers market vendor.
 
-## Documentation
+[Documentation](https://mrnewb.github.io/docs/mrnewborganics) · [GitHub](https://github.com/MrNewb/MrNewbOrganics) · [Discord](https://discord.gg/mrnewbscripts)
 
-For detailed installation and configuration instructions, please visit our documentation:
+## Install
 
-**[Official Documentation](https://mrnewbs-scrips.gitbook.io/guide)**
+Needs [ox_lib](https://github.com/overextended/ox_lib) and [Newb_Bridge](https://github.com/MrNewb/Newb_Bridge).
 
-## Support
+```cfg
+ensure ox_lib
+ensure Newb_Bridge
+ensure MrNewbOrganics
+```
 
-Need help? We're here to assist you!
+Copy `[INSTALL]/images/` into your inventory images folder. Register `apple`, `pineapple`, and `lettuce` as items.
 
-- **[Discord Server](https://discord.gg/mrnewbscripts)** - Join our community for support and updates
+## Config
 
-## More Scripts
-
-Check out our other premium scripts:
-
-**[MrNewb Scripts Store](https://mrnewbscripts.tebex.io/)**
-
-## Features
-
-- Fruit tree picking
-- Vegetable harvesting (with prop or sphere zones)
-- Vendor to buy the harvested goods
-- Configurable locations and items
-
-## Installation
-
-For detailed configuration options, please refer to our [documentation](https://mrnewbs-scrips.gitbook.io/guide).
-
----
-
-**Made with love by MrNewb Scripts**
+`configs/config.lua` — pick sites (sphere zones or spawned props), reward items, animations, vendor peds, blips, and sell prices

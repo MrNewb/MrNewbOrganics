@@ -1,34 +1,42 @@
 fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
+
 name 'MrNewbOrganics'
 author 'MrNewb'
-description 'A simple fruit picking script featuring prop spawning, zone targeting, and item rewards. Built as a practical exercise in metatable implementation.'
-version '0.0.2'
+description 'Fruit picking, vegetable harvesting, and a farmers market built on Newb_Bridge'
+version '1.0.0'
 
 shared_scripts {
-	'core/init.lua',
-	'configs/**/*.lua',
+    '@ox_lib/init.lua',
+    '@Newb_Bridge/import.lua',
+    'configs/*.lua',
+    'resource/shared/locale.lua',
 }
 
 client_scripts {
-	'modules/**/client.lua',
+    'resource/client/fruit_picking.lua',
+    'resource/client/farmers_market.lua',
 }
 
 server_scripts {
-	'modules/**/server.lua',
+    'resource/server/fruit_picking.lua',
+    'resource/server/farmers_market.lua',
 }
 
 files {
-	'locales/*.json'
+    'locales/*.json',
 }
 
 dependencies {
-	'/server:6116',
-	'/onesync',
-	'community_bridge',
+    '/server:6116',
+    '/onesync',
+    'ox_lib',
+    'Newb_Bridge',
 }
 
 escrow_ignore {
-	'**/*.lua',
+    'configs/*.lua',
+    'locales/*.json',
+    'resource/**/*.lua',
 }

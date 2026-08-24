@@ -10,29 +10,29 @@
 --		  Need support? Join our Discord server for help: https://discord.gg/mrnewbscripts
 --		  Check out my paid scripts and freebies at https://mrnewbscripts.tebex.io/
 --		  If you need help with configuration or have any questions, please do not hesitate to ask.
---		  Docs Are Always Available At -- https://mrnewbs-scrips.gitbook.io/guide
+--		  Docs Are Always Available At -- https://mrnewb.github.io/docs/
 --
 
 Config = Config or {}
 
 Config.PickingTypes = {
-    ["Apple Trees"] = {
+    ['Apple Trees'] = {
         locations = {
             vector4(347.5, 6517.5, 30.5, 1.0),
         },
-        rewardItem = {item = "apple", count = 1, metadata = {}},
-        anim = {dict = "amb@prop_human_movie_bulb@idle_a", name = "idle_a", flag = 1},
+        rewardItem = { item = 'apple', count = 1, metadata = {} },
+        anim = { dict = 'amb@prop_human_movie_bulb@idle_a', name = 'idle_a', flag = 1 },
     },
-    ["Pineapple"] = {
+    ['Pineapple'] = {
         locations = {
             vector4(2188.4407, 5098.7378, 47.0, 42.9676),
             vector4(2185.2417, 5102.0708, 46.8, 43.8043),
         },
-        rewardItem = {item = "pineapple", count = 1, metadata = {}},
-        anim = {dict = "amb@world_human_gardener_plant@male@base", name = "base", flag = 1},
-        propModel = "prop_pineapple",
+        rewardItem = { item = 'pineapple', count = 1, metadata = {} },
+        anim = { dict = 'amb@world_human_gardener_plant@male@base', name = 'base', flag = 1 },
+        propModel = 'prop_pineapple',
     },
-    ["Lettuce"] = {
+    ['Lettuce'] = {
         locations = {
             vector4(2194.8003, 5092.0093, 47.1285, 225.2668),
             vector4(2817.8713, 4587.9688, 44.8657, 0.0000),
@@ -44,8 +44,25 @@ Config.PickingTypes = {
             vector4(2822.0645, 4613.2876, 45.4886, 0.0000),
             vector4(2835.7375, 4592.4468, 46.1003, 0.0000),
         },
-        rewardItem = {item = "lettuce", count = 1, metadata = {}},
-        anim = {dict = "amb@world_human_gardener_plant@male@base", name = "base", flag = 1},
-        propModel = "prop_veg_crop_03_cab",
+        rewardItem = { item = 'lettuce', count = 1, metadata = {} },
+        anim = { dict = 'amb@world_human_gardener_plant@male@base', name = 'base', flag = 1 },
+        propModel = 'prop_veg_crop_03_cab',
+    },
+}
+
+Config.FarmersMarket = {
+    Enabled = true,
+    Markets = {
+        ['Mr Solitaire'] = {
+            blip = { id = 52, color = 2, scale = 0.8, label = 'Farmers Market' },
+            entityType = 'ped',
+            model = 'cs_brad',
+            coords = vector4(1263.4164, 3545.6189, 34.1728, 204.9759),
+            shopItems = {
+                apple = 5,
+                pineapple = 10,
+                lettuce = 7,
+            },
+        },
     },
 }
