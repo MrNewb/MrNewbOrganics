@@ -25,15 +25,8 @@ local function sellProduce(src, vendor, itemName, sellCount)
     local itemInfo = bridge.inventory.getItemInfo(itemName)
     local itemLabel = itemInfo and itemInfo.label or itemName
 
-    if (bridge.inventory.getItemCount(src, itemName) or 0) < sellCount then
-        bridge.notifications.notify(src, { description = locale('FarmersMarket.noproducts', itemLabel), type = 'error', duration = 3000 })
-        return
-    end
-
-    if not bridge.inventory.removeItem(src, itemName, sellCount) then
-        bridge.notifications.notify(src, { description = locale('FarmersMarket.error'), type = 'error', duration = 3000 })
-        return
-    end
+    if (bridge.inventory.getItemCount(src, itemName) or 0) < sellCount then return bridge.notifications.notify(src, { description = locale('FarmersMarket.noproducts', itemLabel), type = 'error', duration = 3000 }) end
+    if not bridge.inventory.removeItem(src, itemName, sellCount) then return bridge.notifications.notify(src, { description = locale('FarmersMarket.error'), type = 'error', duration = 3000 }) end
 
     local totalPrice = priceEach * sellCount
     if not bridge.framework.addMoney(src, 'bank', totalPrice, 'farmers_market') then

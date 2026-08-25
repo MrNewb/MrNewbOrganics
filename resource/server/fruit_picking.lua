@@ -1,6 +1,4 @@
 local harvestLocations = {}
-local harvestCooldownMs = 60000
-local harvestDistance = 10.0
 
 local function registerHarvestLocation(plantType, locationIndex, locationCoords, plantData)
     if type(plantType) ~= 'string' then return end
@@ -24,17 +22,18 @@ end
 
 local function giveHarvestReward(src, harvestLocation)
     local playerPed = GetPlayerPed(src)
-    if #(GetEntityCoords(playerPed) - harvestLocation.coords) > harvestDistance then return end
+    if playerPed == 0 or not DoesEntityExist(playerPed) then return end
+    if #(GetEntityCoords(playerPed) - harvestLocation.coords) > 5.0 then return end
 
     local identifier = bridge.framework.getIdentifier(src)
     if not identifier then return end
 
     local now = os.time()
     local lastHarvest = harvestLocation.lastHarvest[identifier] or 0
-    if now - lastHarvest < (harvestCooldownMs / 1000) then return end
+    if now - lastHarvest < 60 then return end
 
     if bridge.inventory.canCarryItem and not bridge.inventory.canCarryItem(src, harvestLocation.itemName, harvestLocation.itemCount) then
-        return
+        return bridge.notifications.notify(src, { description = locale('Warnings.NotEnoughSpace'), type = 'error' })
     end
 
     harvestLocation.lastHarvest[identifier] = now
@@ -45,6 +44,8 @@ end
 
 RegisterNetEvent('MrNewbOrganics:Server:PickPlant', function(harvestId)
     local src = source
+    local playerPed = GetPlayerPed(src)
+    if playerPed == 0 or not DoesEntityExist(playerPed) then return end
     if type(harvestId) ~= 'string' or harvestId == '' or #harvestId > 64 then return end
 
     local harvestLocation = harvestLocations[harvestId]

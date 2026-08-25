@@ -14,23 +14,25 @@ local function createHarvestBlip(coords)
     return blip
 end
 
-local function playHarvestAnimation(animation)
-    if type(animation) ~= 'table' or type(animation.dict) ~= 'string' or type(animation.name) ~= 'string' then return end
-
-    lib.requestAnimDict(animation.dict)
-    local duration = GetAnimDuration(animation.dict, animation.name) * 1000
-    if duration < 1 then duration = 5000 end
-
-    TaskPlayAnim(cache.ped, animation.dict, animation.name, 8.0, -8.0, -1, animation.flag or 1, 0.0, false, false, false)
-    Wait(duration)
-    StopAnimTask(cache.ped, animation.dict, animation.name, 1.0)
-    RemoveAnimDict(animation.dict)
-end
-
 local function harvestThisPlant(harvest)
     if harvest.onCooldown then return end
 
-    playHarvestAnimation(harvest.animation)
+    local animation = harvest.animation
+    local anim = nil
+    if type(animation) == 'table' and type(animation.dict) == 'string' and type(animation.name) == 'string' then
+        anim = { dict = animation.dict, clip = animation.name, flag = animation.flag or 1 }
+    end
+
+    if not bridge.progressbar.openprogressbar({
+        duration = 5000,
+        label = locale('Targets.picklabel'),
+        disable = { move = true, combat = true },
+        anim = anim,
+        canCancel = true,
+    }) then
+        return bridge.notifications.notify({ description = locale('Warnings.Canceled'), type = 'error' })
+    end
+
     TriggerServerEvent('MrNewbOrganics:Server:PickPlant', harvest.id)
 
     harvest.onCooldown = true

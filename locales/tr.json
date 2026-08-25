@@ -1,5 +1,8 @@
 {
 	"Targets": {
+		"FarmersMarketLabel": "Çiftçi Pazarı",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
 		"picklabel": "Topla",
 		"pickicon": "fa-solid fa-leaf",
 		"pickcolor": "green",
@@ -8,20 +11,22 @@
 	"Blips": {
 		"pickblip": "Bitki topla"
 	},
-	"Picking": {
-		"cannotCarry": "Bu eşyadan daha fazla taşıyamazsın."
+	"Warnings": {
+		"Canceled": "İptal edildi.",
+		"NotEnoughSpace": "Bu eşyadan daha fazla taşıyamazsın."
 	},
-	"FruitBuyer": {
+	"FarmersMarket": {
 		"Title": "Çiftçi Pazarı",
 		"Description": "Ürünlerinizi burada satın.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
 		"AmountToSell": "Satılacak miktar",
+		"color": "green",
 		"sellmenu": "Ürün sat",
 		"sellitem": "%s'ı %s$'a sat",
 		"noproducts": "Satacak %s'ınız yok.",
 		"notsolditem": "Bu ürün burada satılamaz.",
 		"error": "Ürünlerinizi satmaya çalışırken bir hata oluştu.",
 		"toofar": "Pazardan çok uzaklaştınız.",
-		"sold": "%sx %s'ı $%s'a sattınız.",
-		"empty": "Şu anda satacak bir şeyin yok."
+		"sold": "%sx %s'ı $%s'a sattınız."
 	}
 }

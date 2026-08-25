@@ -1,5 +1,8 @@
 {
 	"Targets": {
+		"FarmersMarketLabel": "Mercado de Agricultores",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
 		"picklabel": "Recoger",
 		"pickicon": "fa-solid fa-leaf",
 		"pickcolor": "green",
@@ -8,20 +11,22 @@
 	"Blips": {
 		"pickblip": "Recoger planta"
 	},
-	"Picking": {
-		"cannotCarry": "No puedes llevar más de este objeto."
+	"Warnings": {
+		"Canceled": "Cancelado.",
+		"NotEnoughSpace": "No puedes llevar más de este objeto."
 	},
-	"FruitBuyer": {
+	"FarmersMarket": {
 		"Title": "Mercado de Agricultores",
 		"Description": "Vende tus productos aquí.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
 		"AmountToSell": "Cantidad a vender",
+		"color": "green",
 		"sellmenu": "Vender productos",
 		"sellitem": "Vender %s por $%s cada uno",
 		"noproducts": "No tienes %s para vender.",
 		"notsolditem": "Este artículo no se puede vender aquí.",
 		"error": "Ocurrió un error al intentar vender tus artículos.",
 		"toofar": "Te alejaste demasiado del mercado.",
-		"sold": "Vendiste %sx %s por $%s.",
-		"empty": "No tienes nada que vender ahora mismo."
+		"sold": "Vendiste %sx %s por $%s."
 	}
 }

@@ -1,5 +1,8 @@
 {
 	"Targets": {
+		"FarmersMarketLabel": "Bondemarked",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
 		"picklabel": "Pluk",
 		"pickicon": "fa-solid fa-leaf",
 		"pickcolor": "green",
@@ -8,20 +11,22 @@
 	"Blips": {
 		"pickblip": "Pluk plante"
 	},
-	"Picking": {
-		"cannotCarry": "Du kan ikke bære mere af denne genstand."
+	"Warnings": {
+		"Canceled": "Annulleret.",
+		"NotEnoughSpace": "Du kan ikke bære mere af denne genstand."
 	},
-	"FruitBuyer": {
+	"FarmersMarket": {
 		"Title": "Bondemarked",
 		"Description": "Sælg dine produkter her.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
 		"AmountToSell": "Mængde at sælge",
+		"color": "green",
 		"sellmenu": "Sælg produkter",
 		"sellitem": "Sælg %s for $%s hver",
 		"noproducts": "Du har ingen %s at sælge.",
 		"notsolditem": "Denne vare kan ikke sælges her.",
 		"error": "Der opstod en fejl under forsøget på at sælge dine varer.",
 		"toofar": "Du er flyttet for langt væk fra markedet.",
-		"sold": "Du solgte %sx %s for $%s.",
-		"empty": "Du har intet at sælge lige nu."
+		"sold": "Du solgte %sx %s for $%s."
 	}
 }

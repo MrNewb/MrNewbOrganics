@@ -11,18 +11,22 @@
 	"Blips": {
 		"pickblip": "Pick Plant"
 	},
+	"Warnings": {
+		"Canceled": "Canceled.",
+		"NotEnoughSpace": "You do not have enough inventory space."
+	},
 	"FarmersMarket": {
 		"Title": "Farmers Market",
-		"Description": "Sell your produce here.",
+		"Description": "Dump your produce for cash.",
 		"MenuIcon": "fa-solid fa-basket-shopping",
 		"AmountToSell": "Amount to Sell",
 		"color": "green",
 		"sellmenu": "Sell Produce",
 		"sellitem": "Sell %s for $%s each",
-		"noproducts": "You have no %s to sell.",
-		"notsolditem": "This item cannot be sold here.",
+		"noproducts": "You have no %s to sell!",
+		"notsolditem": "I dont buy that.",
 		"error": "That sale didnt go through.",
-		"toofar": "You moved too far away from the market.",
-		"sold": "You sold %sx %s for $%s."
+		"toofar": "Get closer to the market.",
+		"sold": "Sold %s %s for $%s"
 	}
 }

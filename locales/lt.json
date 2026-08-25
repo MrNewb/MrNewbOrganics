@@ -1,5 +1,8 @@
 {
 	"Targets": {
+		"FarmersMarketLabel": "Ūkininkų turgus",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
 		"picklabel": "Rinkti",
 		"pickicon": "fa-solid fa-leaf",
 		"pickcolor": "green",
@@ -8,20 +11,22 @@
 	"Blips": {
 		"pickblip": "Rinkti augalą"
 	},
-	"Picking": {
-		"cannotCarry": "You cannot carry any more of this item."
+	"Warnings": {
+		"Canceled": "Atšaukta.",
+		"NotEnoughSpace": "You cannot carry any more of this item."
 	},
-	"FruitBuyer": {
+	"FarmersMarket": {
 		"Title": "Ūkininkų turgus",
 		"Description": "Parduokite savo produkciją čia.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
 		"AmountToSell": "Pardavimo kiekis",
+		"color": "green",
 		"sellmenu": "Parduoti produkciją",
 		"sellitem": "Parduoti %s už $%s kiekvieną",
 		"noproducts": "Neturite %s pardavimui.",
 		"notsolditem": "Šis daiktas negali būti parduotas čia.",
 		"error": "Klaida bandant parduoti jūsų daiktus.",
 		"toofar": "Pasislinkt per toli nuo turgaus.",
-		"sold": "Pardavėte %sx %s už $%s.",
-		"empty": "You have nothing to sell right now."
+		"sold": "Pardavėte %sx %s už $%s."
 	}
 }

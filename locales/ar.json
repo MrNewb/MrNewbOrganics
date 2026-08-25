@@ -1,5 +1,8 @@
 {
 	"Targets": {
+		"FarmersMarketLabel": "سوق المزارعين",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
 		"picklabel": "قطف",
 		"pickicon": "fa-solid fa-leaf",
 		"pickcolor": "green",
@@ -8,20 +11,22 @@
 	"Blips": {
 		"pickblip": "قطف النبات"
 	},
-	"Picking": {
-		"cannotCarry": "لا يمكنك حمل المزيد من هذا العنصر."
+	"Warnings": {
+		"Canceled": "تم الإلغاء.",
+		"NotEnoughSpace": "لا يمكنك حمل المزيد من هذا العنصر."
 	},
-	"FruitBuyer": {
+	"FarmersMarket": {
 		"Title": "سوق المزارعين",
 		"Description": "بع منتجاتك هنا.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
 		"AmountToSell": "الكمية للبيع",
+		"color": "green",
 		"sellmenu": "بيع المنتجات",
 		"sellitem": "بع %s مقابل $%s لكل قطعة",
 		"noproducts": "ليس لديك %s للبيع.",
 		"notsolditem": "لا يمكن بيع هذا العنصر هنا.",
 		"error": "حدث خطأ أثناء محاولة بيع العناصر الخاصة بك.",
 		"toofar": "لقد ابتعدت كثيراً عن السوق.",
-		"sold": "لقد بعت %sx %s مقابل $%s.",
-		"empty": "ليس لديك ما تبيعه الآن."
+		"sold": "لقد بعت %sx %s مقابل $%s."
 	}
 }

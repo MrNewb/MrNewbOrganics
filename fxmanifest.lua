@@ -5,7 +5,7 @@ lua54 'yes'
 name 'MrNewbOrganics'
 author 'MrNewb'
 description 'Fruit picking, vegetable harvesting, and a farmers market built on Newb_Bridge'
-version '1.0.1'
+version '1.0.2'
 
 shared_scripts {
     '@ox_lib/init.lua',
