@@ -1,20 +1,5 @@
 local vendors = {}
-local vendorDistance = 5.0
 local maxSellCount = 1000
-
-local function getVendorIfPlayerIsClose(src, vendorName)
-    local playerPed = GetPlayerPed(src)
-    if type(vendorName) ~= 'string' or vendorName == '' or #vendorName > 64 then return end
-
-    local vendor = vendors[vendorName]
-    if not vendor then return end
-
-    if #(GetEntityCoords(playerPed) - vendor.coords) > vendorDistance then
-        return nil, 'far'
-    end
-
-    return vendor
-end
 
 local function registerVendor(vendorName, vendorData)
     if type(vendorName) ~= 'string' or type(vendorData) ~= 'table' or not vendorData.coords then return end
@@ -35,10 +20,7 @@ end
 
 local function sellProduce(src, vendor, itemName, sellCount)
     local priceEach = vendor.shopItems[itemName]
-    if not priceEach then
-        bridge.notifications.notify(src, { description = locale('FarmersMarket.notsolditem'), type = 'error', duration = 3000 })
-        return
-    end
+    if not priceEach then return bridge.notifications.notify(src, { description = locale('FarmersMarket.notsolditem'), type = 'error', duration = 3000 }) end
 
     local itemInfo = bridge.inventory.getItemInfo(itemName)
     local itemLabel = itemInfo and itemInfo.label or itemName
@@ -65,17 +47,19 @@ end
 
 RegisterNetEvent('MrNewbOrganics:Server:SellToMarket', function(vendorName, itemName, sellCount)
     local src = source
+    if type(vendorName) ~= 'string' or vendorName == '' or #vendorName > 64 then return end
     if type(itemName) ~= 'string' or itemName == '' or #itemName > 64 then return end
 
     sellCount = tonumber(sellCount)
     if not sellCount or sellCount ~= sellCount or sellCount % 1 ~= 0 or sellCount < 1 or sellCount > maxSellCount then return end
 
-    local vendor, reason = getVendorIfPlayerIsClose(src, vendorName)
-    if not vendor then
-        if reason == 'far' then
-            bridge.notifications.notify(src, { description = locale('FarmersMarket.toofar'), type = 'error', duration = 3000 })
-        end
-        return
+    local vendor = vendors[vendorName]
+    if not vendor then return end
+
+    local ped = GetPlayerPed(src)
+    if ped == 0 or not DoesEntityExist(ped) then return end
+    if #(GetEntityCoords(ped) - vendor.coords) > 5.0 then
+        return bridge.notifications.notify(src, { description = locale('FarmersMarket.toofar'), type = 'error', duration = 3000 })
     end
 
     sellProduce(src, vendor, itemName, sellCount)
