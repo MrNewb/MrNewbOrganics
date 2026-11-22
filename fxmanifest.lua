@@ -5,23 +5,29 @@ lua54 'yes'
 name 'MrNewbOrganics'
 author 'MrNewb'
 description 'Fruit picking, vegetable harvesting, and a farmers market built on Newb_Bridge'
-version '1.0.2'
+version '1.0.3'
+
+ox_libs {
+    'locale',
+}
 
 shared_scripts {
     '@ox_lib/init.lua',
     '@Newb_Bridge/import.lua',
-    'configs/*.lua',
-    'resource/shared/locale.lua',
+    'resource/open/shared/config.lua',
+    'resource/modules/core/shared/helpers.lua',
+    'resource/modules/picking/shared/picking.lua',
 }
 
 client_scripts {
-    'resource/client/fruit_picking.lua',
-    'resource/client/farmers_market.lua',
+    'resource/modules/picking/client/picking.lua',
+    'resource/modules/market/client/market.lua',
 }
 
 server_scripts {
-    'resource/server/fruit_picking.lua',
-    'resource/server/farmers_market.lua',
+    'resource/modules/core/server/helpers.lua',
+    'resource/modules/picking/server/picking.lua',
+    'resource/modules/market/server/market.lua',
 }
 
 files {
@@ -36,7 +42,5 @@ dependencies {
 }
 
 escrow_ignore {
-    'configs/*.lua',
-    'locales/*.json',
-    'resource/**/*.lua',
+    '**/*',
 }

@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Canceled.",
-		"NotEnoughSpace": "You do not have enough inventory space."
+		"NotEnoughSpace": "You do not have enough inventory space.",
+		"AlreadyPicked": "That plant is already gone.",
+		"TooFar": "Get closer to the plant."
 	},
 	"FarmersMarket": {
 		"Title": "Farmers Market",

@@ -1,39 +1,41 @@
 local spawnedVendors = {}
 local vendorBlips = {}
 
+local function getInteractionId(vendorName)
+    return ('mrnewb_organics_market_%s'):format(vendorName:gsub('%s+', '_'):lower())
+end
+
 local function createVendorBlip(coords, blipData)
     local blip = AddBlipForCoord(coords.x, coords.y, coords.z)
-    SetBlipSprite(blip, blipData.id or 52)
-    SetBlipColour(blip, blipData.color or 2)
-    SetBlipScale(blip, blipData.scale or 0.8)
+    SetBlipSprite(blip, blipData.id)
+    SetBlipColour(blip, blipData.color)
+    SetBlipScale(blip, blipData.scale)
     SetBlipAsShortRange(blip, true)
     BeginTextCommandSetBlipName('STRING')
-    AddTextComponentSubstringPlayerName(blipData.label or locale('FarmersMarket.Title'))
+    AddTextComponentSubstringPlayerName(blipData.label)
     EndTextCommandSetBlipName(blip)
+    if blipData.category then
+        AddTextEntry('BLIP_CAT_' .. blipData.category, Config.BlipCategoryLabel)
+        SetBlipCategory(blip, blipData.category)
+    end
     return blip
 end
 
 local function askHowManyToSell(vendorName, itemName, itemLabel, itemCount)
     if itemCount < 1 then
-        bridge.notifications.notify({ description = locale('FarmersMarket.noproducts', itemLabel), type = 'error', duration = 3000 })
-        return
+        return bridge.notifications.notify({ description = locale('FarmersMarket.noproducts', itemLabel), type = 'error', duration = 3000 })
     end
 
     local input = bridge.inputs.inputdialog(itemLabel, {
         { type = 'slider', label = locale('FarmersMarket.AmountToSell'), min = 1, max = itemCount, default = 1, step = 1 },
     })
-    if not input then return end
+    if not input or not input[1] then return end
 
-    local sellCount = tonumber(input[1])
-    if not sellCount or sellCount < 1 then return end
-
-    TriggerServerEvent('MrNewbOrganics:Server:SellToMarket', vendorName, itemName, sellCount)
+    TriggerServerEvent('MrNewbOrganics:server:soldProduce', vendorName, itemName, input[1])
 end
 
 local function openVendorMenu(vendorName)
-    local vendor = Config.FarmersMarket and Config.FarmersMarket.Markets and Config.FarmersMarket.Markets[vendorName]
-    if not vendor then return end
-
+    local vendor = Config.FarmersMarket.Markets[vendorName]
     local menuOptions = {
         {
             title = vendorName,
@@ -43,7 +45,7 @@ local function openVendorMenu(vendorName)
         },
     }
 
-    for itemName, price in pairs(vendor.shopItems or {}) do
+    for itemName, price in pairs(vendor.shopItems) do
         local itemInfo = bridge.inventory.getItemInfo(itemName) or {}
         local itemLabel = itemInfo.label or itemName
         menuOptions[#menuOptions + 1] = {
@@ -52,7 +54,7 @@ local function openVendorMenu(vendorName)
             icon = itemInfo.image or bridge.inventory.getImagePath(itemName),
             iconColor = locale('FarmersMarket.color'),
             onSelect = function()
-                askHowManyToSell(vendorName, itemName, itemLabel, bridge.inventory.getItemCount(itemName) or 0)
+                askHowManyToSell(vendorName, itemName, itemLabel, bridge.inventory.getItemCount(itemName))
             end,
         }
     end
@@ -66,17 +68,15 @@ end
 
 local function spawnVendor(vendorName, vendor)
     if spawnedVendors[vendorName] then return end
-    if type(vendorName) ~= 'string' or type(vendor) ~= 'table' or not vendor.coords then return end
 
     if vendor.blip then
         vendorBlips[vendorName] = createVendorBlip(vendor.coords, vendor.blip)
     end
 
-    local vendorCoords = vendor.coords
-    exports[bridge.name]:AddInteraction(('mrnewb_organics_market_%s'):format(vendorName:gsub('%s+', '_'):lower()), {
+    exports[bridge.name]:AddInteraction(getInteractionId(vendorName), {
         model = vendor.model,
-        coords = vector3(vendorCoords.x, vendorCoords.y, vendorCoords.z),
-        heading = vendorCoords.w or 0.0,
+        coords = vector3(vendor.coords.x, vendor.coords.y, vendor.coords.z),
+        heading = vendor.coords.w,
         radius = 100.0,
         options = {
             {
@@ -100,32 +100,30 @@ local function spawnVendor(vendorName, vendor)
 end
 
 local function spawnVendors()
-    if not Config.FarmersMarket or not Config.FarmersMarket.Enabled then return end
+    if not Config.FarmersMarket.Enabled then return end
 
-    for vendorName, vendor in pairs(Config.FarmersMarket.Markets or {}) do
+    for vendorName, vendor in pairs(Config.FarmersMarket.Markets) do
         spawnVendor(vendorName, vendor)
     end
 end
 
 local function removeVendors()
     for vendorName in pairs(spawnedVendors) do
-        exports[bridge.name]:RemoveInteraction(('mrnewb_organics_market_%s'):format(vendorName:gsub('%s+', '_'):lower()))
+        exports[bridge.name]:RemoveInteraction(getInteractionId(vendorName))
         spawnedVendors[vendorName] = nil
     end
 
     for vendorName, blip in pairs(vendorBlips) do
-        if blip and DoesBlipExist(blip) then
-            RemoveBlip(blip)
-        end
+        if DoesBlipExist(blip) then RemoveBlip(blip) end
         vendorBlips[vendorName] = nil
     end
 end
 
-AddEventHandler('Newb_Bridge:client:playerLoad', spawnVendors)
-AddEventHandler('Newb_Bridge:client:playerUnload', removeVendors)
+AddEventHandler('Newb_Bridge:client:playerLoaded', spawnVendors)
+AddEventHandler('Newb_Bridge:client:playerUnloaded', removeVendors)
 
 AddEventHandler('onResourceStop', function(resourceName)
-    if GetCurrentResourceName() ~= resourceName then return end
+    if cache.resource ~= resourceName then return end
     removeVendors()
 end)
 
