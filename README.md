@@ -1,8 +1,12 @@
 # MrNewbOrganics
 
+![MrNewbOrganics](.github/assets/banner.webp)
+
 Fruit and vegetable picking plus farmers market vendors.
 
-[Documentation](https://mrnewb.github.io/docs/mrnewborganics) | [Install guide](https://mrnewb.github.io/docs/mrnewborganics/install) | [Tebex](https://mrnewbscripts.tebex.io/) | [Discord](https://discord.gg/mrnewbscripts)
+[Documentation](https://mrnewb.github.io/docs/mrnewborganics) | [Install guide](https://mrnewb.github.io/docs/mrnewborganics/install) | [Tebex](https://mrnewbscripts.tebex.io/) | [Discord](https://discord.gg/mrnewbscripts) | [Short](https://www.youtube.com/shorts/xKjmfgxqe3U)
+
+<a href="https://www.youtube.com/shorts/xKjmfgxqe3U"><img src=".github/assets/short.webp" alt="MrNewbOrganics on YouTube Shorts" width="200"></a>
 
 <p>
   <img src="%5Binstall%5D/images/apple.png" alt="apple" width="96" />
