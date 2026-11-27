@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Annulé.",
-		"NotEnoughSpace": "Vous ne pouvez pas en porter davantage."
+		"NotEnoughSpace": "Vous ne pouvez pas en porter davantage.",
+		"AlreadyPicked": "Cette plante n'est plus là.",
+		"TooFar": "Rapproche-toi de la plante."
 	},
 	"FarmersMarket": {
 		"Title": "Marché fermier",

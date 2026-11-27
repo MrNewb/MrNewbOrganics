@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "已取消。",
-		"NotEnoughSpace": "你無法攜帶更多此物品。"
+		"NotEnoughSpace": "你無法攜帶更多此物品。",
+		"AlreadyPicked": "那株植物已經沒了.",
+		"TooFar": "請靠近植物."
 	},
 	"FarmersMarket": {
 		"Title": "農夫市場",

@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "İptal edildi.",
-		"NotEnoughSpace": "Bu eşyadan daha fazla taşıyamazsın."
+		"NotEnoughSpace": "Bu eşyadan daha fazla taşıyamazsın.",
+		"AlreadyPicked": "O bitki zaten toplanmış.",
+		"TooFar": "Bitkiye yaklaş."
 	},
 	"FarmersMarket": {
 		"Title": "Çiftçi Pazarı",

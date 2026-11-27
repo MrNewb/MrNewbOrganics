@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "تم الإلغاء.",
-		"NotEnoughSpace": "لا يمكنك حمل المزيد من هذا العنصر."
+		"NotEnoughSpace": "لا يمكنك حمل المزيد من هذا العنصر.",
+		"AlreadyPicked": "هذه النبتة لم تعد موجودة.",
+		"TooFar": "اقترب من النبتة."
 	},
 	"FarmersMarket": {
 		"Title": "سوق المزارعين",

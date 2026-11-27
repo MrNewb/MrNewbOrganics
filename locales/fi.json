@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Peruttu.",
-		"NotEnoughSpace": "Et voi kantaa enempää tätä tavaraa."
+		"NotEnoughSpace": "Et voi kantaa enempää tätä tavaraa.",
+		"AlreadyPicked": "Tuo kasvi on jo poissa.",
+		"TooFar": "Mene lähemmäs kasvia."
 	},
 	"FarmersMarket": {
 		"Title": "Maanviljelijöiden tori",

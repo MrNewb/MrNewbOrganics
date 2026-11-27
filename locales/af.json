@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Gekanselleer.",
-		"NotEnoughSpace": "Jy kan nie meer van hierdie item dra nie."
+		"NotEnoughSpace": "Jy kan nie meer van hierdie item dra nie.",
+		"AlreadyPicked": "Daardie plant is reeds weg.",
+		"TooFar": "Gaan nader aan die plant."
 	},
 	"FarmersMarket": {
 		"Title": "Boeremark",

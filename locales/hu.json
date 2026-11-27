@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Megszakítva.",
-		"NotEnoughSpace": "Nem tudsz többet vinni ebből a tárgyból."
+		"NotEnoughSpace": "Nem tudsz többet vinni ebből a tárgyból.",
+		"AlreadyPicked": "Ezt a növényt már leszedték.",
+		"TooFar": "Menj közelebb a növényhez."
 	},
 	"FarmersMarket": {
 		"Title": "Termelői piac",

@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Otkazano.",
-		"NotEnoughSpace": "Ne možeš nositi više ovog predmeta."
+		"NotEnoughSpace": "Ne možeš nositi više ovog predmeta.",
+		"AlreadyPicked": "Te biljke više nema.",
+		"TooFar": "Priđi bliže biljci."
 	},
 	"FarmersMarket": {
 		"Title": "Farmarska tržnica",

@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Anulowano.",
-		"NotEnoughSpace": "Nie możesz nieść więcej tego przedmiotu."
+		"NotEnoughSpace": "Nie możesz nieść więcej tego przedmiotu.",
+		"AlreadyPicked": "Tej rośliny już nie ma.",
+		"TooFar": "Podejdź bliżej rośliny."
 	},
 	"FarmersMarket": {
 		"Title": "Targ rolniczy",

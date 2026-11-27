@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Geannuleerd.",
-		"NotEnoughSpace": "Je kunt niet meer van dit item dragen."
+		"NotEnoughSpace": "Je kunt niet meer van dit item dragen.",
+		"AlreadyPicked": "Die plant is al weg.",
+		"TooFar": "Ga dichter bij de plant staan."
 	},
 	"FarmersMarket": {
 		"Title": "Boerenmarkt",

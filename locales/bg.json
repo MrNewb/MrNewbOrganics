@@ -1,0 +1,34 @@
+{
+	"Targets": {
+		"FarmersMarketLabel": "Фермерски пазар",
+		"FarmersMarketIcon": "fa-solid fa-basket-shopping",
+		"FarmersMarketColor": "green",
+		"picklabel": "Бери",
+		"pickicon": "fa-solid fa-leaf",
+		"pickcolor": "green",
+		"pickbliplabel": "Бране"
+	},
+	"Blips": {
+		"pickblip": "Бери растение"
+	},
+	"Warnings": {
+		"Canceled": "Отменено.",
+		"NotEnoughSpace": "Нямаш достатъчно място в инвентара.",
+		"AlreadyPicked": "Това растение вече го няма.",
+		"TooFar": "Приближи се до растението."
+	},
+	"FarmersMarket": {
+		"Title": "Фермерски пазар",
+		"Description": "Продай продукцията си за пари.",
+		"MenuIcon": "fa-solid fa-basket-shopping",
+		"AmountToSell": "Количество за продажба",
+		"color": "green",
+		"sellmenu": "Продай продукция",
+		"sellitem": "Продай %s за $%s на брой",
+		"noproducts": "Нямаш %s за продажба!",
+		"notsolditem": "Не купувам това.",
+		"error": "Продажбата не се осъществи.",
+		"toofar": "Приближи се до пазара.",
+		"sold": "Продаде %s %s за $%s"
+	}
+}

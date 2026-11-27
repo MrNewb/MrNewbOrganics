@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Cancelado.",
-		"NotEnoughSpace": "Você não pode carregar mais deste item."
+		"NotEnoughSpace": "Você não pode carregar mais deste item.",
+		"AlreadyPicked": "Essa planta já foi colhida.",
+		"TooFar": "Chegue mais perto da planta."
 	},
 	"FarmersMarket": {
 		"Title": "Mercado de Agricultores",

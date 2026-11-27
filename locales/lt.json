@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Atšaukta.",
-		"NotEnoughSpace": "You cannot carry any more of this item."
+		"NotEnoughSpace": "You cannot carry any more of this item.",
+		"AlreadyPicked": "Šio augalo jau nebėra.",
+		"TooFar": "Prieik arčiau augalo."
 	},
 	"FarmersMarket": {
 		"Title": "Ūkininkų turgus",

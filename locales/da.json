@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Annulleret.",
-		"NotEnoughSpace": "Du kan ikke bære mere af denne genstand."
+		"NotEnoughSpace": "Du kan ikke bære mere af denne genstand.",
+		"AlreadyPicked": "Den plante er allerede væk.",
+		"TooFar": "Gå tættere på planten."
 	},
 	"FarmersMarket": {
 		"Title": "Bondemarked",

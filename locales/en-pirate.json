@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Belay that.",
-		"NotEnoughSpace": "Yer hold be full o' that, matey."
+		"NotEnoughSpace": "Yer hold be full o' that, matey.",
+		"AlreadyPicked": "That plant be gone, matey.",
+		"TooFar": "Get nearer yon plant."
 	},
 	"FarmersMarket": {
 		"Title": "Pirate's Market",

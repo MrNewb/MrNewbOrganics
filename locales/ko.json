@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "취소됨.",
-		"NotEnoughSpace": "이 아이템을 더 이상 가질 수 없습니다."
+		"NotEnoughSpace": "이 아이템을 더 이상 가질 수 없습니다.",
+		"AlreadyPicked": "그 식물은 이미 없어졌어요.",
+		"TooFar": "식물에 더 가까이 가세요."
 	},
 	"FarmersMarket": {
 		"Title": "농부 시장",

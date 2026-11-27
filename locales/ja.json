@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "キャンセルした。",
-		"NotEnoughSpace": "このアイテムはこれ以上持てません。"
+		"NotEnoughSpace": "このアイテムはこれ以上持てません。",
+		"AlreadyPicked": "その植物はもうないよ.",
+		"TooFar": "植物に近づいてね."
 	},
 	"FarmersMarket": {
 		"Title": "ファーマーズマーケット",

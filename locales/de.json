@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Abgebrochen.",
-		"NotEnoughSpace": "Sie können nicht mehr von diesem Gegenstand tragen."
+		"NotEnoughSpace": "Sie können nicht mehr von diesem Gegenstand tragen.",
+		"AlreadyPicked": "Diese Pflanze ist schon weg.",
+		"TooFar": "Geh näher an die Pflanze."
 	},
 	"FarmersMarket": {
 		"Title": "Bauernmarkt",

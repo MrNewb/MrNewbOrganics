@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "रद्द किया गया.",
-		"NotEnoughSpace": "आप इस वस्तु को और नहीं ले जा सकते।"
+		"NotEnoughSpace": "आप इस वस्तु को और नहीं ले जा सकते।",
+		"AlreadyPicked": "वह पौधा पहले ही तोड़ा जा चुका है.",
+		"TooFar": "पौधे के और पास जाएँ."
 	},
 	"FarmersMarket": {
 		"Title": "किसान बाजार",

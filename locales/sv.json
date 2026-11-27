@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Avbruten.",
-		"NotEnoughSpace": "Du kan inte bära mer av det här föremålet."
+		"NotEnoughSpace": "Du kan inte bära mer av det här föremålet.",
+		"AlreadyPicked": "Den växten är redan borta.",
+		"TooFar": "Gå närmare växten."
 	},
 	"FarmersMarket": {
 		"Title": "Bondens marknad",

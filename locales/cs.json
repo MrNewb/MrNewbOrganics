@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Zrušeno.",
-		"NotEnoughSpace": "Víc tohoto předmětu už neuneseš."
+		"NotEnoughSpace": "Víc tohoto předmětu už neuneseš.",
+		"AlreadyPicked": "Ta rostlina už tu není.",
+		"TooFar": "Přibliž se k rostlině."
 	},
 	"FarmersMarket": {
 		"Title": "Farmářský trh",

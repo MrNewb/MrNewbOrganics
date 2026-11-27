@@ -13,7 +13,9 @@
 	},
 	"Warnings": {
 		"Canceled": "Anulat.",
-		"NotEnoughSpace": "Nu mai poți duce din acest obiect."
+		"NotEnoughSpace": "Nu mai poți duce din acest obiect.",
+		"AlreadyPicked": "Planta aceea a fost deja culeasă.",
+		"TooFar": "Apropie-te de plantă."
 	},
 	"FarmersMarket": {
 		"Title": "Piața fermierilor",
